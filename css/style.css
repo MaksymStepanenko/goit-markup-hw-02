@@ -1,0 +1,231 @@
+/* основні правила */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --acent-color: #2196f3;
+  --secondary-acent-color:#188CE8;
+  --primary-white-color: #ffffff;
+  --primary-bg-color: #f5f5f5;
+  --secondary-bg-color: #f5f4fa;
+  --footer-bg-color: #2f303a;
+}
+
+body {
+  background: var(--primary-white-color);
+  color: var(--primary-text-color);
+
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+}
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* index.html */
+/* header */
+
+
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+}
+.logo-accent {
+    color: var(--acent-color);
+}
+
+
+
+.navigation a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.navigation a:hover,
+.navigation a:focus {
+  color: var(--acent-color);
+}
+.navigation a.active {
+  color: var(--acent-color);
+}
+.auth-nav a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--primary-text-color);
+}
+
+.auth-nav a:focus,
+.auth-nav a:hover {
+  color: var(--acent-color);
+}
+/* main  */
+.hero {
+  background: var(--footer-bg-color);
+}
+.hero h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  letter-spacing: 1.36;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+
+  text-align: center;
+}
+.hero button {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background-color: var(--acent-color);
+}
+.hero button:hover,
+.hero button:focus
+{
+    background: var(--secondary-acent-color);
+}
+/* features */
+.features {
+    background-color: var(--primary-bg-color);
+}
+.features h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
+.features p {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* work  */ /* team */
+.work h2,
+.team h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  color: var(--title-text-color);
+}
+.team {
+    background-color: var(--secondary-bg-color);
+}
+
+.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  color: var(--title-text-color);
+}
+
+.team p {
+  font-size: 16px;
+  line-height: 1.19;
+}
+/* footer */
+.footer {
+    background-color: var(--footer-bg-color);
+}
+.footer > a {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    color: var(--primary-white-color);
+}
+
+.list-address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    
+    color: var(--primary-white-color);
+}
+
+.contact-address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.list-address:hover,
+.contact-address:hover,
+.list-address:focus,
+.contact-address:focus {
+    color: var(--acent-color);
+}
+
+/* portfolio.html */
+
+.portfolio {
+    background-color: var(--primary-bg-color);
+}
+
+.portfolio button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    
+    cursor: pointer;
+
+    color: var(--title-text-color);
+    background: var(--secondary-bg-color);
+
+    text-align: center;
+}
+.portfolio button:hover,
+.portfolio button:focus {
+    background-color: var(--acent-color);
+    color: var(--primary-white-color);
+}
+
+.portfolio-cards li {
+    background-color: var(--primary-white-color);
+}
+.portfolio-cards h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    color: var(--title-text-color);
+    letter-spacing: 0.06em; 
+}
+.portfolio-cards p {
+    font-size: 16px;
+    line-height: 1.87;
+    color: var(--primary-text-color);
+}
