@@ -86,8 +86,8 @@ a {
 .hero h1 {
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
-  letter-spacing: 1.36;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
 
@@ -108,7 +108,7 @@ a {
 }
 /* features */
 .features {
-  background-color: var(--primary-bg-color);
+  background-color: var(--primary-white-color);
 }
 .features h3 {
   font-weight: 700;
@@ -134,7 +134,9 @@ a {
 .team {
   background-color: var(--secondary-bg-color);
 }
-
+.team li {
+  background-color: var(--primary-white-color);
+}
 .team h3 {
   font-weight: 500;
   font-size: 16px;
@@ -185,10 +187,6 @@ a {
 }
 
 /* portfolio.html */
-
-.portfolio {
-  background-color: var(--primary-bg-color);
-}
 
 .portfolio button {
   font-family: inherit;
